@@ -4,104 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Haller Apps | Premium Android Apps</title>
+    <title>Our Apps | Haller Apps</title>
+    <meta name="description" content="Explore premium, secure, and privacy-focused Android applications developed by Haller Apps.">
 
-    <meta name="description" content="Haller Apps develops premium Android applications focused on simplicity, speed and privacy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-<header class="header">
-
-    <div class="logo">
-        Haller Apps
+<header class="navbar">
+    <div class="container">
+        <a href="/" class="logo">Haller Apps</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/apps/">Apps</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy/">Privacy</a>
+        </nav>
     </div>
-
-    <nav>
-
-        <a href="#">Home</a>
-        <a href="#">Apps</a>
-        <a href="#">Support</a>
-        <a href="#">Privacy</a>
-
-    </nav>
-
 </header>
 
+<div class="page">
+    <span class="badge pulse-badge">Portfolio</span>
+    <h1 style="margin-top: 16px;">Our Applications</h1>
+    <p>We build tools that make your smartphone experience simpler, faster, and completely secure. All processing is kept local on your device.</p>
 
-<section class="hero">
+    <!-- Apps List Grid -->
+    <div class="apps" style="grid-template-columns: 1fr; width: 100%; margin: 40px 0; gap: 40px; padding: 0;">
+        
+        <!-- App 1: QR Scanner -->
+        <div class="card reveal active" style="flex-direction: row; gap: 40px; align-items: center; padding: 48px;">
+            <div style="font-size: 72px; padding: 24px; background: rgba(74, 222, 128, 0.05); border: 1px dashed rgba(74, 222, 128, 0.2); border-radius: 24px; align-self: flex-start;">
+                🔍
+            </div>
+            <div class="card-content" style="flex: 1; margin: 0;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                    <h2 style="margin: 0; font-size: 32px;">QR Code Scanner & PDF Scan</h2>
+                    <span class="badge" style="background: rgba(74, 222, 128, 0.15); color: var(--primary); text-transform: none; border-radius: 8px; font-size: 12px; padding: 4px 10px;">Available Now</span>
+                </div>
+                <p style="font-size: 16px; margin-bottom: 20px;">
+                    Scan any QR code instantly, create customized QR designs, and digitize physical documents into high-quality PDFs. Built with speed and strict device-only processing.
+                </p>
+                <div style="margin-bottom: 24px;">
+                    <h3 style="color: var(--text); font-size: 15px; margin-bottom: 10px; font-weight: 600;">Key Features:</h3>
+                    <ul style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8; font-size: 14px;">
+                        <li>Fast auto-focus decoding for all 1D/2D QR & Barcode standards.</li>
+                        <li>QR Code Generator: Convert URLs, Contacts, Wi-Fi networks, and text into custom codes.</li>
+                        <li>Document Scanner: Scan multi-page papers, auto-crop borders, apply filters, and compile into PDF files.</li>
+                        <li>100% Offline operation. Zero network requests or remote database requirements.</li>
+                    </ul>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+                    <a class="button" href="https://play.google.com/store" target="_blank" style="margin: 0; padding: 12px 28px; font-size: 14px;">
+                        Download on Play Store
+                    </a>
+                    <a href="/privacy/" style="color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">
+                        Read Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <span class="badge">
-        Android Developer
-    </span>
-
-    <h1>
-
-        Beautiful Android Apps.<br>
-        Designed for Everyday Life.
-
-    </h1>
-
-    <p>
-
-        We create fast, elegant and privacy-focused Android applications
-        used by thousands of people around the world.
-
-    </p>
-
-    <a class="button" href="#">
-        Explore Apps
-    </a>
-
-</section>
-
-
-<section class="apps">
-
-    <div class="card">
-
-        <h2>QR Code Scanner</h2>
-
-        <p>
-            Scan QR codes, create custom QR codes and scan documents instantly.
-        </p>
+        <!-- App 2: Remote TV Control -->
+        <div class="card reveal active" style="flex-direction: row; gap: 40px; align-items: center; padding: 48px;">
+            <div style="font-size: 72px; padding: 24px; background: rgba(255, 255, 255, 0.02); border: 1px dashed rgba(255, 255, 255, 0.08); border-radius: 24px; align-self: flex-start; filter: grayscale(1);">
+                📺
+            </div>
+            <div class="card-content" style="flex: 1; margin: 0;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                    <h2 style="margin: 0; font-size: 32px; color: var(--text-secondary);">Remote TV Control</h2>
+                    <span class="badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); border-color: rgba(255,255,255,0.08); text-transform: none; border-radius: 8px; font-size: 12px; padding: 4px 10px;">Coming Soon</span>
+                </div>
+                <p style="font-size: 16px; margin-bottom: 20px; color: var(--text-secondary);">
+                    Control Smart TVs with a clean and modern digital layout. Seamless automatic connection via local Wi-Fi with extremely low response latency.
+                </p>
+                <div style="margin-bottom: 24px;">
+                    <h3 style="color: var(--text-secondary); font-size: 15px; margin-bottom: 10px; font-weight: 600;">Upcoming Features:</h3>
+                    <ul style="margin-left: 20px; color: var(--text-secondary); opacity: 0.8; line-height: 1.8; font-size: 14px;">
+                        <li>Instant device discovery for popular Smart TV ecosystems.</li>
+                        <li>Responsive touch pad controls and full alphanumeric keyboard syncing.</li>
+                        <li>Quick-launch channel bar to switch applications with a single tap.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
-
-
-    <div class="card">
-
-        <h2>Remote TV Control</h2>
-
-        <p>
-            Control Smart TVs with a clean and modern experience.
-        </p>
-
-    </div>
-
-
-    <div class="card">
-
-        <h2>More Apps</h2>
-
-        <p>
-            More premium Android apps are coming soon.
-        </p>
-
-    </div>
-
-</section>
-
+</div>
 
 <footer>
-
-    © 2026 Haller Apps
-
+    <div class="container">
+        <p>© 2026 Haller Apps. All rights reserved.</p>
+        <p style="margin-top: 12px;">
+            <a href="/">Home</a> | 
+            <a href="/support/">Support</a> | 
+            <a href="/privacy/">Privacy Policy</a>
+        </p>
+    </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 </html>

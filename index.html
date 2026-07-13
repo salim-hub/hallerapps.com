@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Haller Apps | Premium Android Apps</title>
-
     <meta name="description" content="Haller Apps develops premium Android applications focused on simplicity, speed and privacy.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,92 +16,82 @@
 
 <body>
 
-<header class="header">
-
-    <div class="logo">
-        Haller Apps
+<header class="navbar">
+    <div class="container">
+        <a href="/" class="logo">Haller Apps</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/apps/">Apps</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy/">Privacy</a>
+        </nav>
     </div>
-
-    <nav>
-
-        <a href="#">Home</a>
-        <a href="#">Apps</a>
-        <a href="#">Support</a>
-        <a href="#">Privacy</a>
-
-    </nav>
-
 </header>
 
-
-<section class="hero">
-
-    <span class="badge">
+<section class="hero reveal">
+    <span class="badge pulse-badge">
         Android Developer
     </span>
 
-    <h1>
-
+    <h1 class="reveal delay-100">
         Beautiful Android Apps.<br>
         Designed for Everyday Life.
-
     </h1>
 
-    <p>
-
+    <p class="reveal delay-200">
         We create fast, elegant and privacy-focused Android applications
         used by thousands of people around the world.
-
     </p>
 
-    <a class="button" href="#">
+    <a class="button reveal delay-300" href="/apps/">
         Explore Apps
     </a>
-
 </section>
-
 
 <section class="apps">
-
-    <div class="card">
-
-        <h2>QR Code Scanner</h2>
-
-        <p>
-            Scan QR codes, create custom QR codes and scan documents instantly.
-        </p>
-
+    <div class="card reveal hover-scale delay-100">
+        <div class="card-content">
+            <span class="app-icon">🔍</span>
+            <h2>QR Code Scanner</h2>
+            <p>
+                Scan QR codes, create custom QR codes and scan documents instantly.
+            </p>
+        </div>
+        <a class="card-link" href="/apps/">Learn More →</a>
     </div>
 
-
-    <div class="card">
-
-        <h2>Remote TV Control</h2>
-
-        <p>
-            Control Smart TVs with a clean and modern experience.
-        </p>
-
+    <div class="card reveal hover-scale delay-200">
+        <div class="card-content">
+            <span class="app-icon">📺</span>
+            <h2>Remote TV Control</h2>
+            <p>
+                Control Smart TVs with a clean, lag-free and modern remote interface.
+            </p>
+        </div>
+        <a class="card-link" href="/apps/">Learn More →</a>
     </div>
 
-
-    <div class="card">
-
-        <h2>More Apps</h2>
-
-        <p>
-            More premium Android apps are coming soon.
-        </p>
-
+    <div class="card reveal hover-scale delay-300">
+        <div class="card-content">
+            <span class="app-icon">✨</span>
+            <h2>More Apps</h2>
+            <p>
+                More premium, ad-light and privacy-focused Android apps are coming soon.
+            </p>
+        </div>
+        <span class="card-link" style="color: var(--text-secondary); cursor: default;">Coming Soon</span>
     </div>
-
 </section>
 
-
 <footer>
-
-    © 2026 Haller Apps
-
+    <div class="container">
+        <p>© 2026 Haller Apps. All rights reserved.</p>
+        <p style="margin-top: 12px;">
+            <a href="/apps/">Our Apps</a> | 
+            <a href="/support/">Support</a> | 
+            <a href="/privacy/">Privacy Policy</a>
+        </p>
+    </div>
 </footer>
 
 <script src="assets/js/main.js"></script>

@@ -12,18 +12,6 @@
     "url": "https://play.google.com/store/apps/details?id=com.haller.royalcardclub"
   },
   {
-    "slug": "messagerecover",
-    "package": "com.haller.messagerecover",
-    "status": 200,
-    "name": "WhatsHidden: Deleted Messages",
-    "description": "Recover deleted messages, photos & videos. View chats privately and save status.",
-    "icon": "https://play-lh.googleusercontent.com/w1hc5bbGA0rsErg4gbyg8mJE_kJLiHZFgGI1RZmzwavoNDetZwwg_fgsqs2IcYe8x_3LFcVUL1VPzbGfZ6QgAH8=s0-br30",
-    "developer": true,
-    "image": "/assets/images-apps/messagerecover.webp",
-    "verified_on": "2026-11-14",
-    "url": "https://play.google.com/store/apps/details?id=com.haller.messagerecover"
-  },
-  {
     "slug": "identifyai",
     "package": "com.haller.identifyai",
     "status": 200,

@@ -522,3 +522,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outli
 }
 @media (prefers-reduced-motion: reduce) { .app-card { transition: none; } .app-card:hover { transform: none; } }
 .catalog-heading h2 { scroll-margin-top: 140px; }
+
+/* Keep direct Royal support links below the fixed navigation. */
+#royal-blackjack-support { scroll-margin-top: 160px; }

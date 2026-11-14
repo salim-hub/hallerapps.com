@@ -32,3 +32,33 @@ https://support.google.com/adspolicy/answer/15132179?hl=en
 Website changes do not constitute certification approval.
 
 Existing local app-ads.txt modifications are outside this release and preserved.
+
+## Full application catalog — 2026-11-14
+
+Verified the developer page (id=9167703004087120294), then all eight requested
+package detail pages with hl=en&gl=US. All returned HTTP 200, appeared in the
+developer catalog, and linked back to the supplied developer ID. No requested
+application was inaccessible. The developer page also lists com.haller.loca;
+it is outside the requested eight-app scope and has not been added.
+
+`data/apps.json` retains official titles, short store descriptions, package IDs,
+icon source URLs and verification date. Royal Blackjack's current store title
+is Royal Blackjack: 21 Card Game. No extra features were invented.
+
+Icons are hosted in assets/images-apps as 512x512 lossless WebP files; total
+catalog icon weight is approximately 1.37 MB, reduced from 2.84 MB PNG downloads.
+The existing Royal PNG remains available for its original hero and OG URLs.
+
+Regenerate the shared static card component with:
+
+    python3 scripts/generate-app-cards.py
+
+This requires only the Python standard library and emits checked-in HTML for
+home (8 cards), /apps/ (8 cards) and Royal's More Apps section (7 cards).
+No runtime framework or dependency was added. Existing GitHub Pages automatic
+build/deploy remains the production pipeline.
+
+Validation: correct card counts and local assets; deterministic regeneration;
+JavaScript syntax; whitespace; unchanged SEO heads and byte-identical Royal
+Important Information block; browser desktop 1440px (3 columns) and mobile
+390px (1 column, no horizontal overflow), including More Apps.

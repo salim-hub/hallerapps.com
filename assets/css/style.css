@@ -476,3 +476,20 @@ footer a:hover {
         font-size: 38px;
     }
 }
+/* Shared application cards; retain the existing palette and typography. */
+.home-apps { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 990px; }
+.royal-card .badge { margin-bottom: 24px; }
+.app-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.app-actions .button { margin-top: 0; padding: 14px 24px; font-size: 14px; }
+.app-actions .card-link { margin-top: 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outline-offset: 5px; }
+@media (max-width: 900px) {
+    .home-apps { grid-template-columns: 1fr; }
+}
+.royal-app-icon { display: block; border-radius: 22px; object-fit: cover; margin-bottom: 24px; }
+.apps > .card { min-width: 0; }
+@media (max-width: 900px) {
+    .apps > .catalog-card { flex-direction: column !important; gap: 24px !important; padding: 28px !important; align-items: stretch !important; }
+    .catalog-card .card-content { min-width: 0; }
+    .app-actions a { max-width: 100%; overflow-wrap: anywhere; }
+}

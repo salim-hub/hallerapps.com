@@ -62,3 +62,22 @@ Validation: correct card counts and local assets; deterministic regeneration;
 JavaScript syntax; whitespace; unchanged SEO heads and byte-identical Royal
 Important Information block; browser desktop 1440px (3 columns) and mobile
 390px (1 column, no horizontal overflow), including More Apps.
+
+## Royal Blackjack legal pages — 14 November 2026
+
+Added /apps/royal-blackjack/privacy/ and /apps/royal-blackjack/terms/, with visible
+links on the landing page, an app-policy entry on /privacy/, Royal support on
+/support/, and sitemap entries. Shared legal.css preserves the existing design.
+
+The owner supplied the Android source path for this release. Verified Firebase
+Analytics/Crashlytics, AdMob/UMP, RevenueCat/Play Billing, local storage/backup and
+Play Games flows. See docs/royal-blackjack-privacy-review.md for evidence and
+pending configuration/legal details. No SDK, controller identity, licence or
+retention duration was invented. Android sources and Play Console were not changed.
+
+Checks: original website/QR policy tabs and Royal Important Information unchanged
+byte for byte; all local HTML links/assets resolve; sitemap XML; one H1 per new
+page; no nested paragraphs; JavaScript syntax; git diff whitespace. Browser QA:
+new policies desktop/mobile, no horizontal overflow, working privacy table of
+contents, and QR policy tab remains usable. Existing static deployment pipeline
+remains GitHub Pages; no package build system or dependency was introduced.

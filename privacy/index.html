@@ -59,14 +59,14 @@
                 <div class="policy-block">
                     <h3>2. Information We Collect</h3>
                     <p>
-                        Our website is a static showcase page. We do not require users to create accounts, and we do not collect, process, or store any personally identifiable information (PII) when you browse this site.
+                        Our website is a static showcase and does not provide user accounts or forms that ask for personal details. Website delivery and external font requests can nevertheless involve connection information, including your IP address and user agent, processed by the hosting and font providers. If you email us, we receive the information you send.
                     </p>
                 </div>
 
                 <div class="policy-block">
                     <h3>3. Cookies and Analytics</h3>
                     <p>
-                        We do not place tracking cookies, advertising pixels, or use server-side tracking on this website. Our hosting provider may maintain basic server access logs (containing standard web information like IP addresses and user agents) purely for security diagnostics and traffic load maintenance, which are automatically rotated and deleted.
+                        The reviewed website code does not install analytics or advertising pixels. The site is hosted through GitHub Pages and loads Inter fonts through Google Fonts. These providers receive requests needed to deliver the site and fonts and may process connection or access-log information under their own policies. We have not verified provider log-retention periods and do not promise a deletion schedule. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s Privacy Statement</a> and <a href="https://developers.google.com/fonts/faq/privacy">Google Fonts privacy information</a>.
                     </p>
                 </div>
 
@@ -91,13 +91,13 @@
             <div class="support-card" style="margin-top: 0; box-shadow: none;">
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 16px; margin-bottom: 24px;">
                     <h2 style="margin: 0; font-size: 22px;">QR Code Scanner & PDF Scan Policy</h2>
-                    <span style="font-size: 13px; color: var(--text-secondary);">Last Updated: December 2024</span>
+                    <span style="font-size: 13px; color: var(--text-secondary);">Last Updated: 14 November 2026</span>
                 </div>
 
                 <div class="policy-block">
                     <h3>1. Information We Collect</h3>
                     <p>
-                        We <strong>do not collect, store, or share any personal data</strong> from users of the QR Code Scanner app. All scanning operations are run client-side on your device.
+                        The scanning and document-processing operations described below run locally on your device. This is separate from technical and usage information processed by Firebase Analytics as described in Section 2; local scan processing is not a claim that the app collects no personal data.
                     </p>
                     <p>
                         The application only performs the following actions locally on your device:
@@ -115,15 +115,17 @@
                 <div class="policy-block">
                     <h3>2. Use of Firebase Analytics</h3>
                     <p>
-                        We use <strong>Firebase Analytics</strong> (a mobile application diagnostics tool provided by Google) to understand usage trends and improve general stability. Firebase Analytics collects non-personal, aggregated usage statistics, which may include:
+                        We use <strong>Google Analytics for Firebase</strong> to understand app usage. The SDK can process event-level usage information and pseudonymous identifiers before producing reports; reports being aggregated does not mean the underlying data is anonymous. Depending on app configuration, consent and device settings, information may include:
                     </p>
                     <ul>
                         <li>Device type and model.</li>
                         <li>Installed app version.</li>
-                        <li>Basic system events (crashes, interface interactions).</li>
+                        <li>App lifecycle and interaction events, such as sessions and screen views.</li>
+                        <li>An app-instance identifier identifying an installation of the app.</li>
+                        <li>Advertising identifiers where collection is enabled and permitted by consent and device settings.</li>
                     </ul>
                     <p>
-                        Firebase Analytics does not collect personal identifiers, nor does it have access to scanned QR code texts or camera visual frames. You can learn more about Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.
+                        Pseudonymous installation and advertising identifiers may constitute personal data under applicable law. We do not describe Firebase Analytics as collecting no personal identifiers. Scan-content handling is described separately below; app-specific event payloads, consent controls and production collection settings still require verification against the QR Scanner implementation. See <a href="https://support.google.com/analytics/answer/11593727">Google Analytics data collection information</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
                     </p>
                 </div>
 

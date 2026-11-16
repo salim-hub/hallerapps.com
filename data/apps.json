@@ -16,12 +16,13 @@
     "package": "com.haller.identifyai",
     "status": 200,
     "name": "Identify AI: Plant, Coin, Rock",
-    "description": "AI identifier for plants, rare coins, gems, rocks, bugs & nature. Scan anything!",
+    "description": "Identify plants, coins, rocks and other objects from photos.",
     "icon": "https://play-lh.googleusercontent.com/jqTc43tVplMYBqMorAw-RBmtAzc6P0_aHRTJVq8oClX_JqOq-Op-i0vSQnpj4HdLUzX2jr7qkZ0YxaA8kB260Q=s0-br30",
     "developer": true,
     "image": "/assets/images-apps/identifyai.webp",
-    "verified_on": "2026-11-14",
-    "url": "https://play.google.com/store/apps/details?id=com.haller.identifyai"
+    "verified_on": "2026-11-16",
+    "url": "https://play.google.com/store/apps/details?id=com.haller.identifyai",
+    "privacy_url": "https://sites.google.com/view/identifyaiprivacy/home"
   },
   {
     "slug": "calorieai",
@@ -40,24 +41,26 @@
     "package": "com.haller.lumasweep",
     "status": 200,
     "name": "LumaSweep: AI Photo Cleaner",
-    "description": "Clean duplicate photos, similar shots & large videos. Free up phone storage now!",
+    "description": "Find duplicate photos, similar shots and large videos.",
     "icon": "https://play-lh.googleusercontent.com/7RDbQYaPklweWg8T9Cbn6X4h2hm4zjIHIHXgEVUFrzpj5tqs_jWRUpqKWM7GthpiIE3hjYR5Lbd5szw-Br8WcN8=s0-br30",
     "developer": true,
     "image": "/assets/images-apps/lumasweep.webp",
-    "verified_on": "2026-11-14",
-    "url": "https://play.google.com/store/apps/details?id=com.haller.lumasweep"
+    "verified_on": "2026-11-16",
+    "url": "https://play.google.com/store/apps/details?id=com.haller.lumasweep",
+    "privacy_url": "https://sites.google.com/view/lumasweepprivacy/home"
   },
   {
     "slug": "roomdesigner",
     "package": "com.haller.roomdesigner",
     "status": 200,
     "name": "AI Room Designer: Home Design",
-    "description": "Redesign your room with AI. Upload a photo and see your dream space in seconds.",
+    "description": "Explore AI room designs using a photo of your space.",
     "icon": "https://play-lh.googleusercontent.com/F69VfAaXzUb47UmHWovkwtgXmgxV1dHJRWGwAOPj8yHy8gbLTUIjtH8xF4hblYTiReaTEYawMUUtkxQhp7VFYpo=s0-br30",
     "developer": true,
     "image": "/assets/images-apps/roomdesigner.webp",
-    "verified_on": "2026-11-14",
-    "url": "https://play.google.com/store/apps/details?id=com.haller.roomdesigner"
+    "verified_on": "2026-11-16",
+    "url": "https://play.google.com/store/apps/details?id=com.haller.roomdesigner",
+    "privacy_url": "https://sites.google.com/view/airoomdesignerprivacy/home"
   },
   {
     "slug": "moneymanager",
@@ -68,8 +71,9 @@
     "icon": "https://play-lh.googleusercontent.com/8miobZvrIZw8fNlEx3ckJPhd0LECjDnJ8ilR5ZA7Rz6X2f4WEi-mZx6T0ZWERh8pOgS9nO-dihD8o2CZ0oQ-7w=s0-br30",
     "developer": true,
     "image": "/assets/images-apps/moneymanager.webp",
-    "verified_on": "2026-11-14",
-    "url": "https://play.google.com/store/apps/details?id=com.haller.moneymanager"
+    "verified_on": "2026-11-16",
+    "url": "https://play.google.com/store/apps/details?id=com.haller.moneymanager",
+    "privacy_url": "https://sites.google.com/view/moneiraprivacy/home"
   },
   {
     "slug": "qrcode",
@@ -80,7 +84,8 @@
     "icon": "https://play-lh.googleusercontent.com/2g4eaIVIUvGA2XZx914e8dPa_lRiTx4BEe_EAwOzsao8JgQVdB_U4T7uBUOKwt42uMgyNxRtal-9glai-JpC8g=s0-br30",
     "developer": true,
     "image": "/assets/images-apps/qrcode.webp",
-    "verified_on": "2026-11-14",
-    "url": "https://play.google.com/store/apps/details?id=com.haller.qrcode"
+    "verified_on": "2026-11-16",
+    "url": "https://play.google.com/store/apps/details?id=com.haller.qrcode",
+    "privacy_url": "/apps/qr-scanner/privacy/"
   }
 ]

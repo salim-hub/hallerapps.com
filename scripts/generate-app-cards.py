@@ -11,7 +11,9 @@ APPS = json.loads((ROOT / 'data/apps.json').read_text())
 def card(app, heading):
     royal = app['slug'] == 'royalcardclub'
     featured = '<span class="catalog-featured">Featured game · Adults only</span>' if royal else ''
-    details = '<a class="card-link" href="/apps/royal-blackjack">Explore the game →</a>' if royal else ''
+    details = '<a class="card-link" href="/apps/royal-blackjack/">Explore the game →</a>' if royal else ''
+    if app.get('privacy_url'):
+        details += f'<a class="card-link" href="{escape(app["privacy_url"])}">App Privacy Policy →</a>'
     return f'''<article class="card app-card{' app-card-featured' if royal else ''}">
     <div class="app-card-top">
         <img class="catalog-icon" src="{escape(app['image'])}" alt="{escape(app['name'])} app icon" width="80" height="80" loading="lazy" decoding="async">
@@ -28,14 +30,14 @@ def card(app, heading):
 </article>'''
 
 
-for file, slot in [('index.html', 'home'), ('apps/index.html', 'catalog'), ('apps/royal-blackjack/index.html', 'more')]:
+for file, slot in [('index.html', 'home'), ('apps/index.html', 'catalog')]:
     more = slot == 'more'
     apps = [app for app in APPS if not more or app['slug'] != 'royalcardclub']
     title = 'More Apps by Haller Apps' if more else 'Our Apps'
     cards = '\n'.join(card(app, 'h3' if slot != 'catalog' else 'h2') for app in apps)
     intro = '' if slot == 'catalog' else f'<div class="catalog-heading"><span class="badge">Explore Haller Apps</span><h2 id="{slot}-apps-title">{title}</h2><p>Find your next everyday essential.</p></div>'
     label = 'aria-label="Our applications"' if slot == 'catalog' else f'aria-labelledby="{slot}-apps-title"'
-    output = f'<section class="app-catalog container" {label}>\n{intro}\n<div class="app-grid">\n{cards}\n</div>\n</section>'
+    output = f'<div class="app-grid">\n{cards}\n</div>'
     output = '\n'.join(line.rstrip() for line in output.splitlines())
     path = ROOT / file
     source = path.read_text()

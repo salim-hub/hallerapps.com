@@ -1,19 +1,8 @@
-.legal-heading { margin-top: 28px; }
-.legal-heading h1 { margin-top: 20px; }
-.legal-page { max-width: 1000px; }
-.legal-package { overflow-wrap: anywhere; }
-.legal-page .support-card { box-shadow: none; }
-.legal-page h2 { scroll-margin-top: 160px; line-height: 1.35; }
-.legal-page p { overflow-wrap: anywhere; }
-.legal-page .legal-toc { position: static; display: block; width: auto; height: auto; padding: 28px; border: 1px solid var(--card-border); border-radius: var(--radius); background: var(--card); box-shadow: none; backdrop-filter: none; }
-.legal-toc h2 { font-size: 20px; margin-bottom: 16px; }
-.legal-toc ol { padding-left: 24px; color: var(--text-secondary); }
-.legal-page .legal-toc a { display: inline-block; font-size: 14px; line-height: 1.6; color: var(--primary); padding: 6px 0; }
-.legal-page .legal-toc a::after { display: none; }
-.legal-page .legal-toc a:hover { text-decoration: underline; }
-.legal-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
-@media (max-width: 600px) {
-    .legal-page { margin-top: 170px; padding-inline: 20px; }
-    .legal-heading h1 { font-size: 36px; }
-    .legal-page .support-card { padding: 26px; }
-}
+/* Legal pages share the site typography and navigation. */
+.legal-package{overflow-wrap:anywhere}
+.legal-page h2{scroll-margin-top:125px}
+.legal-toc h2{font-size:20px}
+.legal-page .support-card a{text-decoration:underline}
+.legal-page .legal-toc a{font-size:14px}
+.legal-page .legal-toc ol{margin-bottom:0}
+.legal-page .support-card p{line-height:1.85}

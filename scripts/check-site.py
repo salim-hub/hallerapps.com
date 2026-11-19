@@ -29,8 +29,16 @@ for path,page in pages.items():
 privacy=(ROOT/'privacy/index.html').read_text()
 assert 'tab-btn' not in privacy and 'Details awaiting confirmation' not in privacy
 royal=(ROOT/'apps/royal-blackjack/index.html').read_text()
-for phrase in ['18 or older','whichever is higher','no real-world monetary value','cannot be redeemed','Success in social casino','optional in-app purchases','com.haller.royalcardclub']:
+for phrase in ['18 or older','whichever is higher','no real-world monetary value','cannot be redeemed','Success in social casino','optional in-app purchases','com.haller.royalcardclub','IMPORTANT NOTICE &amp; SOCIAL CASINO DISCLAIMER (18+)','cannot be transferred between players','Salim Karşanbaş']:
  assert phrase in royal,phrase
 assert 'More Apps by' not in royal
+terms=(ROOT/'terms/index.html').read_text()
+for phrase in ['Salim Karşanbaş','hallerappsinfo@gmail.com','Social Casino Games (Royal Blackjack: 21 Card Game)','no real-world monetary value','transferred between players']:
+ assert phrase in terms,phrase
+home=(ROOT/'index.html').read_text()
+for link in ['/apps/royal-blackjack/','/apps/royal-blackjack/privacy/','/terms/','https://play.google.com/store/apps/details?id=com.haller.royalcardclub']:
+ assert link in home,link
+for path,page in pages.items():
+ assert '/terms/' in page.links,(path,'missing /terms/ link')
 assert len(json.loads((ROOT/'data/apps.json').read_text()))==7
-print(f'PASS: {len(pages)} pages; local routes, fragments, image attributes, headings, privacy separation and game disclosures')
+print(f'PASS: {len(pages)} pages; local routes, fragments, image attributes, headings, privacy separation, terms and game disclosures')

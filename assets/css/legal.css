@@ -1,8 +1,15 @@
 /* Legal pages share the site typography and navigation. */
 .legal-package{overflow-wrap:anywhere}
 .legal-page h2{scroll-margin-top:125px}
-.legal-toc h2{font-size:20px}
+.legal-toc h2{font-size:20px;margin-bottom:14px}
 .legal-page .support-card a{text-decoration:underline}
-.legal-page .legal-toc a{font-size:14px}
-.legal-page .legal-toc ol{margin-bottom:0}
-.legal-page .support-card p{line-height:1.85}
+.legal-page .legal-toc a{font-size:14px;text-decoration:none}
+.legal-page .legal-toc a:hover{text-decoration:underline}
+.legal-page .legal-toc ol{margin:0;display:grid;gap:4px}
+.legal-page .support-card p,.legal-page .support-card li{line-height:1.85;color:#bcc6d4}
+.legal-page .support-card ul{margin:14px 0 0;display:grid;gap:8px}
+.legal-highlight{background:#0e1d18!important;border:1px solid #356e4c!important;border-radius:14px!important;padding:28px!important;margin-top:24px!important}
+.legal-highlight h2{color:#fff}
+.policy-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px;border-bottom:1px solid var(--card-border);padding-bottom:16px;margin-bottom:24px}
+.policy-header h2{margin:0;font-size:22px}
+.policy-updated{font-size:13px;color:var(--text-secondary)}

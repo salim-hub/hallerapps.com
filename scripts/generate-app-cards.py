@@ -10,10 +10,18 @@ APPS = json.loads((ROOT / 'data/apps.json').read_text())
 
 def card(app, heading):
     royal = app['slug'] == 'royalcardclub'
-    featured = '<span class="catalog-featured">Featured game · Adults only</span>' if royal else ''
-    details = '<a class="card-link" href="/apps/royal-blackjack/">Explore the game →</a>' if royal else ''
+    featured = '<span class="catalog-featured">Featured game · Adults only (18+)</span>' if royal else ''
+    links = []
+    if royal:
+        links.append('<a class="card-link" href="/apps/royal-blackjack/">Explore the game →</a>')
     if app.get('privacy_url'):
-        details += f'<a class="card-link" href="{escape(app["privacy_url"])}">App Privacy Policy →</a>'
+        links.append(f'<a class="card-link" href="{escape(app["privacy_url"])}">App Privacy Policy →</a>')
+    if app.get('terms_url'):
+        links.append(f'<a class="card-link" href="{escape(app["terms_url"])}">Terms &amp; Conditions →</a>')
+    details = ''
+    if links:
+        joined = '\n            '.join(links)
+        details = f'<div class="app-card-links">\n            {joined}\n        </div>'
     return f'''<article class="card app-card{' app-card-featured' if royal else ''}">
     <div class="app-card-top">
         <img class="catalog-icon" src="{escape(app['image'])}" alt="{escape(app['name'])} app icon" width="80" height="80" loading="lazy" decoding="async">
